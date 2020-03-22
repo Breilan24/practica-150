@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ver el código de «Wikipedia:Portada» - Wikipedia, la enciclopedia libre</title>
+        <link rel="stylesheet" href="wikipedia.css" type="text/css">
+    </head>
+    <body>
+        <div class="pri">
+            <div>
+                <a href="wikipedia.html"><img src="logo.png" alt="wikipedia" class="pe"></a>
+            </div>
+            <div>
+                <ul class="orden">
+                    <li><a href="wikipedia.html">Portada</a></li>
+                    <li><a href="a">Portal de la comunidad</a></li>
+                    <li><a href="a">Actualidad</a></li>
+                    <li><a href="a">Cambios recientes</a></li>
+                    <li><a href="a">Páginas nuevas</a></li>
+                    <li><a href="a">Página aleatoria</a></li>
+                    <li><a href="a">Ayuda</a></li>
+                    <li><a href="a">Donaciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="orden">
+                    <li class="primero">Herramientas</li>
+                    <li><a href="a">Lo que enlaza aquí</a></li>
+                    <li><a href="a">Cambios en enlazadas</a></li>
+                    <li><a href="a">Subir archivo</a></li>
+                    <li><a href="a">Páginas especiales</a></li>
+                    <li><a href="a">Información de la página</a></li>
+                    <li><a href="a">Elemento de Wikidata</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="orden">
+                    <li class="primero">En otros idiomas<img src="engrane.png" alt="opciones" class="ta"></li>
+                    <li><a href="a">Lista completa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="seg">
+            <ul class="arri">
+                <li><img src="usuario.png" alt="usuario" class="chi">No has accedido</li>
+                <li><a href="dis.html">Discusión</a></li>
+                <li><a href="contribucion.html">Contribuciones</a></li>
+                <li><a href="cuenta.html">Crear una cuenta</a></li>
+                <li><a href="acceder.html">Acceder</a></li>
+            </ul>
+        </div>
+        <div class="ter">
+            <div class="b">
+                <a href="wikipedia.html" style="color: black; text-decoration-line: none;">Portada</a>
+            </div>
+            <div class="az">
+                <a href="discusion.html">Discusión</a>
+            </div>
+        </div>
+        <div class="cuar">
+            <div class="az">
+                <a href="wikipedia.html">Leer</a>
+            </div>
+            <div class="b">
+                <a href="codigo.html" style="color: black; text-decoration-line: none;">Ver código</a>
+            </div>
+            <div class="az">
+                <a href="historial.html">Ver historial</a>
+            </div>
+            <div class="pos">
+                <input type="search" placeholder="Buscar en wikipedia" size="30"><button type="submit"><img src="lupa.png" alt="busqueda" id="buscar"></button>
+            </div>
+        </div>
+        <div class="quin">
+            <p style="margin: 15px;">←<a href="wikipedia.html">Wikipedia:Portada</a></p>
+            <p style="margin: 15px;">No tienes permiso para modificar esta página, por la siguiente razón:</p>
+            <div style="background-color: #EEEEEE; padding: 2%; border-top: 5px solid #BBBBAA; border-bottom: 2px solid #BBBBAA; margin: 15px;">
+                <p>Este es el código fuente de la Portada de <a href="a"><strong>Wikipedia en español</strong></a>. Su diseño y contenido son fruto del <a href="a">consenso</a> de la comunidad de editores. Cualquier propuesta para un nuevo diseño o cambio significativo puede ser planteada en la <a href="discusion.html">página de discusión</a>.</p>
+                <p>Wikipedia es una <a href="a">enciclopedia web multilingüe</a> de <a href="a">contenido libre</a> basada en un modelo de <a href="a">edición abierta</a> que crece cada día gracias a gente de todo el mundo, siendo el mayor proyecto de recopilación de conocimiento jamás realizado en la historia de la humanidad.</p>
+                <p>Ante cualquier duda sobre el proyecto, puedes dejar un mensaje en <a href="a">el Café</a>, o preguntar en tiempo real en el <a href="a">canal de ayuda</a>.</p>
+            </div>
+            <p style="margin: 15px;">Puedes ver y copiar el código fuente de esta página.</p>
+            <textarea readonly cols="160" rows="25" style="margin-left: 15px; margin-right: 15px;">
+<templatestyles src="Plantilla:Portada/OOUI/styles.css" />__NOTOC____NOEDITSECTION__
+{{Portada:Encabezado/OOUI}}
+                
+<div class="main-wrapper">
+<div class="main-wrapper-column">
+{{Portada:Sección
+|id = tfa
+|nombre = Artículo destacado
+|encabezado = {{Portada:Destacado|mostrar=enlace}}
+|contenido = {{Portada:Destacado}}
+|acciones =
+* {{Portada:Botón | {{Portada:Destacado/{{Portada:Destacado/Letra}}|mostrar=título}} | Leer }}
+* <span class="nomobile">{{Portada:Menú | Wikipedia:Artículos destacados/Índice | Todos los artículos destacados }}</span>
+|opciones =
+* {{Portada:Menú | Wikipedia:Candidatos a artículos destacados | Candidatos }}
+{{#if: {{Portada:Destacado|mostrar=extras}} |
+: ''Anteriores:'' {{Portada:Destacado|mostrar=extras}} }}
+|imagen principal = 1
+}}
+                
+{{Portada:Sección
+|id = tga
+|nombre = Artículo bueno
+|encabezado = {{ABDD|mostrar=enlace}}
+|contenido = {{ABDD}}
+|acciones =
+* {{Portada:Botón | {{ABDD|mostrar=título}} | Leer }}
+* <span class="nomobile">{{Portada:Menú | Wikipedia:Artículos buenos/Índice | Todos los artículos buenos }}</span>
+|opciones =
+* {{Portada:Menú | Wikipedia:Selección de artículos buenos/nominaciones | Candidatos }}
+{{#if: {{ABDD|mostrar=extras}} |
+: ''Anteriores:'' {{ABDD|mostrar=extras}} }}
+|imagen principal = 1
+}}
+                
+{{Portada:Sección
+|id = potd
+|nombre = <!-- Recurso del día -->
+|encabezado = [[Wikipedia:Recurso del día|Recurso del día]]
+|contenido = 
+<div class="main-box-content">[[Archivo:{{RDD|mostrar=imagen}}|center|500x500px|{{RDD|mostrar=título}}]]</div>
+{{#if: {{RDD|mostrar=título}} | <div class="main-box-imageCaption">
+{{RDD|mostrar=título}}
+</div>
+}}
+{{#if: {{RDD|mostrar=resumen}} | {{RDD|mostrar=resumen}} }}
+|acciones =
+* {{Portada:Menú | Wikipedia:Recurso del día | Archivo }}
+|imagen destacada = 1
+}}
+                
+{{Portada:Sección
+|id = port
+|encabezado = [[Wikipedia:Portal|Portales]]
+|contenido = {{Portada:Portales II}}
+}}
+</div>
+                
+<div class="main-wrapper-column">
+{{Portada:Sección
+|id = cur
+|nombre = <!-- Actualidad -->
+|encabezado = [[Portal:Actualidad|Actualidad]]
+|contenido = {{Portada:Actualidad}}
+|acciones =
+* {{Portada:Botón | Portal:Actualidad | Otros eventos actuales }}
+|acciones especiales = 0
+|opciones =
+* {{Portada:Menú | :Categoría:Actualidad | Categoría de actualidad }}
+* {{Portada:Menú | {{CURRENTYEAR}} | Año {{CURRENTYEAR}} }}
+* {{Portada:Menú | :Categoría:{{CURRENTYEAR}} | Categoría {{CURRENTYEAR}} }}
+* {{Portada:Menú | Plantilla:Portada:Actualidad | Plantilla }}
+}}
+                
+{{Portada:Sección
+|id = itd
+|nombre = Efemérides
+|encabezado = [[{{CURRENTDAY}} de {{CURRENTMONTHNAMEGEN}}]]
+|contenido = {{Efemérides|{{CURRENTYEAR}}{{CURRENTMONTH}}{{CURRENTDAY2}}}}
+|acciones =
+* {{Portada:Menú | {{#time: j "de" F|-1 day}} | {{#time: j "de" F|-1 day}} }}<!-- ayer -->
+* {{Portada:Botón | {{#time: j "de" F}} | {{#time: j "de" F}} }}<!-- hoy -->
+* {{Portada:Menú | {{#time: j "de" F|+1 day}} | {{#time: j "de" F|+1 day}} }}<!-- mañana -->
+|opciones =
+* {{Portada:Menú | Plantilla:Efemérides | Plantilla }}
+}}
+                
+{{Portada:Sección
+|id = wmfsp
+|encabezado =  [[:meta:Special:MyLanguage/Wikimedia projects|Otros proyectos]] de la [[Fundación Wikimedia]]
+|contenido = <!-- {{Portada:Proyectos}} --> {{Portada:Interproyectos II}}
+}}
+</div>
+                
+</div>
+{{Portada:Interwikis}}{{noexternallanglinks}}
+            </textarea>
+            <p style="margin-left: 15px; margin-right: 15px;">Plantillas usadas en esta página:</p>
+            <ul>
+                <li><a href="a">Plantilla:ABDD</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:ABDD defecto</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Clear</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Días desde</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Edad en días</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Efemérides</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Número mes</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada Bueno/5145</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Portada Bueno/Número</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Portada/OOUI/styles.css</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Actualidad</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Botón</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Destacado</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Destacado/C</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Portada:Destacado/Letra</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Encabezado/OOUI</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Encabezado/OOUI/styles.css</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Interproyectos II</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Interwikis</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Menú</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Portales II</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Resumen</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Sección</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Portada:Sección/styles.css</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:PortalIconos</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:RDD</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:RDD/659</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:RDD/por defecto</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:RDD/º</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:RDD/º/2020-01</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:SIGLO</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Siglo</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Plantilla:Trim</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Título sin coletilla</a> (<a href="a">ver código</a>) (protegida)</li>
+                <li><a href="a">Plantilla:Yesno</a> (<a href="a">ver código</a>) (semiprotegida)</li>
+                <li><a href="a">Módulo:String</a> (<a href="a">ver código</a>) (protegida)</li>
+            </ul>
+            <p style="margin-left: 15px; margin-right: 15px;">Volver a <a href="wikipedia.html">Wikipedia:Portada</a>.</p>
+        </div>
+        <div class="sext">
+            <img src="segu.png" alt="boton"  style="float: right; height: 30px; width: auto; padding: 6px;">
+            <img src="boton.jpg" alt="segundo boton" style="float: right; height: 30px; width: auto; padding: 6px;">
+            <ul class="otra">
+                <li><a href="a">Política de privacidad</a></li>
+                <li><a href="a">Acerca de Wikipedia</a></li>
+                <li><a href="a">Limitacion de responsabilidad</a></li>
+                <li><a href="a">Desarrolladores</a></li>
+                <li><a href="a">Estadísticas</a></li>
+                <li><a href="a">Declaracion de cookies</a></li>
+                <li><a href="a">Versión para móviles</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
